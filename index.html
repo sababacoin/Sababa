@@ -3,11 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sababa</title>
+    <title>Sababa Coin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #0f2847;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #d4af37;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: white;
+        }
+        .hero {
+            background: linear-gradient(135deg, #d4af37, #0f2847);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            animation: fadeIn 1s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+        .feature-card {
+            background-color: #1d1f21;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 200px;
+            transition: transform 0.2s;
+        }
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: auto;
+            background-color: #d4af37;
+            text-align: center;
+            padding: 10px;
+        }
+        .cta {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #0f2847;
+        }
+        .contact-button {
+            background-color: #d4af37;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to SABABA</h1>
-    <p>Contact us at: sababacoin@gmail.com</p>
-    <p>More info about SABB...</p>
+    <header>
+        <h1>SABABA</h1>
+    </header>
+    <div class="hero">
+        <h2>Welcome to Sababa Coin</h2>
+        <img src="path/to/coin-logo.svg" alt="Sababa Coin Logo" />
+        <p>Sababa (SABABA) is an exclusive ERC-20 token on the Ethereum network. With a hard cap of 100 tokens and deep liquidity, it is built for those who value scarcity and transparency in the crypto space. Simple, stable, Sababa.</p>
+    </div>
+    <div class="features">
+        <div class="feature-card">Scarcity</div>
+        <div class="feature-card">Deep Liquidity</div>
+        <div class="feature-card">Transparency</div>
+        <div class="feature-card">ERC-20 Standard</div>
+        <div class="feature-card">Ethereum Network</div>
+        <div class="feature-card">Premium Asset</div>
+    </div>
+    <div class="cta">
+        <h2>Get in Touch</h2>
+        <button class="contact-button" onclick="window.location='mailto:sababacoin@gmail.com'">Contact Us</button>
+    </div>
+    <footer>
+        <p>&copy; 2026 Sababa Coin. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
